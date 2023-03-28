@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-one: #F3F3FF;
+    --color-two: #C5DEFA;
+    --color-three: #E1F0F4;
+    --color-four: #FBC99C;
+    --color-five: #353739;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-three);
+}
+
+header {
+    width: 100%;
+    height: 10rem;
+    background-image: url("/img/ram_banner.webp");
+    background-size: contain;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--color-five);
+    font-family: "Poppins", sans-serif;
+}
+
+hr {
+    width: 90%;
+    margin: 1rem;
+}
+
+main {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finder-character {
+    width: 30rem;
+    height: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0.5rem;
+    color: var(--color-five);
+    font-family: 'Anton', sans-serif;
+}
+
+.container-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-character {
+    width: 20rem;
+    height: 10rem;
+    background-color: var(--color-three);
+    border: solid 5px var(--color-five);
+    margin: 1rem;
+    display: flex;
+    border-radius: 10px;
+}
+
+.card-character>img {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-character>.description-card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-card>h2 {
+    text-align: center;
+    color: var(--color-five);
+    margin-top: 1rem; 
+}
+
+.description-card>p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-five);
+    margin-top: 1.2rem;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-five);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer>a {
+    color: var(--color-one);
+    text-decoration: none;
+}
